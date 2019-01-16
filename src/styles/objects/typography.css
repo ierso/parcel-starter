@@ -1,0 +1,8 @@
+html {
+  font-size: 0.75em;
+}
+@media (min-width: 769px) {
+  html {
+    font-size: 1em;
+  }
+}

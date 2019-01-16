@@ -1,0 +1,28 @@
+{
+  "name": "parcel-starter",
+  "version": "1.0.0",
+  "description": "Parcel Starter",
+  "main": "main.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "serve": "http-server -p 6060 -o"
+  },
+  "keywords": [],
+  "author": "Cory Pierson <coryp@jkdesign.com> (https://corypierson.com)",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^8.0.0",
+    "postcss-nested": "^4.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.4",
+    "cssnano": "^4.1.7",
+    "http-server": "^0.11.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "ie >= 11"
+  ]
+}
