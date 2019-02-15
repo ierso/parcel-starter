@@ -7,4 +7,6 @@ body {
 
 .test {
   display: flex;
+  border: $gBlue solid 15px;
+  font-family: $gFont;
 }
