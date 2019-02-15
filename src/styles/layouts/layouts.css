@@ -1,4 +1,10 @@
-.l-container {
-  max-width: 1200px;
+@define-mixin container {
+  width: 100%;
+  max-width: 1020px;
   margin: 0 auto;
+  border: red solid 1px;
+}
+
+.l-container {
+  @add-mixin container;
 }

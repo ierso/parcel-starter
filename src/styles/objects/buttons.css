@@ -1,0 +1,10 @@
+@define-mixin button $bg, $color {
+  padding: 1em 2em;
+  border: blue solid 3px;
+  background: $bg;
+  color: $color;
+}
+
+.button {
+  @mixin button teal, #ffffff;
+}

@@ -1,5 +1,4 @@
-@import "normalize.css";
-@import "./fonts/fonts.css";
-@import "./objects/objects.css";
-@import "./layouts/layouts.css";
+@import "./variables/variables";
 @import "./components/components";
+@import "./layouts/layouts";
+@import "./objects/objects";

@@ -1,1 +1,10 @@
-// @import "./test.css";
+body {
+  background: pink;
+  h1 {
+    color: red;
+  }
+}
+
+.test {
+  display: flex;
+}

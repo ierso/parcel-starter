@@ -11,18 +11,13 @@
   "keywords": [],
   "author": "Cory Pierson <coryp@jkdesign.com> (https://corypierson.com)",
   "license": "MIT",
-  "dependencies": {
-    "normalize.css": "^8.0.0",
-    "postcss-nested": "^4.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^8.6.4",
-    "cssnano": "^4.1.7",
-    "http-server": "^0.11.1"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "ie >= 11"
-  ]
+    "cssnano": "^4.1.10",
+    "http-server": "^0.11.1",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.1",
+    "postcss-simple-vars": "^5.0.1"
+  }
 }
