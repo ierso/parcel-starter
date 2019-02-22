@@ -1,0 +1,10 @@
+@define-mixin typography $size, $color {
+  margin: 0;
+  font-size: $size;
+  line-height: calc($size * 1.5);
+  color: $color;
+}
+
+.o-title {
+  @mixin typography 1.5rem, green;
+}

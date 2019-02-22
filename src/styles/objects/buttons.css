@@ -5,6 +5,6 @@
   color: $color;
 }
 
-.button {
+.o-button {
   @mixin button teal, #ffffff;
 }
