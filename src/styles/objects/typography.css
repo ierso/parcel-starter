@@ -1,32 +1,83 @@
-@define-mixin heading $size {
+@define-mixin heading $size, $mobileSize, $mobileLgSize, $tabletSize,
+  $desktopSize {
   font-weight: 600;
   font-size: $size;
   line-height: calc($size * 1.5);
+  @media (min-width: $gMobile) {
+    font-size: $mobileSize;
+    line-height: calc($mobileSize * 1.5);
+  }
+  @media (min-width: $gMobileLg) {
+    font-size: $mobileLgSize;
+    line-height: calc($mobileLgSize * 1.5);
+  }
+  @media (min-width: $gTablet) {
+    font-size: $tabletSize;
+    line-height: calc($tabletSize * 1.5);
+  }
+  @media (min-width: $gDesktop) {
+    font-size: $desktopSize;
+    line-height: calc($desktopSize * 1.5);
+  }
 }
 
 .o-heading {
   &--h1 {
-    @mixin heading $gH1;
+    @mixin heading $gH1, $gMobileH1, $gMobileLgH1, $gTabletH1, $gDesktopH1;
   }
   &--h2 {
-    @mixin heading $gH2;
+    @mixin heading $gH2, $gMobileH2, $gMobileLgH2, $gTabletH2, $gDesktopH2;
   }
   &--h3 {
-    @mixin heading $gH3;
+    @mixin heading $gH3, $gMobileH3, $gMobileLgH3, $gTabletH3, $gDesktopH3;
   }
   &--h4 {
-    @mixin heading $gH4;
+    @mixin heading $gH4, $gMobileH4, $gMobileLgH4, $gTabletH4, $gDesktopH4;
   }
   &--h5 {
-    @mixin heading $gH5;
+    @mixin heading $gH5, $gMobileH5, $gMobileLgH5, $gTabletH5, $gDesktopH5;
   }
   &--h6 {
-    @mixin heading $gH6;
+    @mixin heading $gH6, $gMobileH6, $gMobileLgH6, $gTabletH6, $gDesktopH6;
   }
   &--no-margin {
     margin: 0;
   }
   &--uppercase {
     text-transform: uppercase;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+}
+
+@define-mixin paragraph $size, $desktopSize {
+  font-weight: 400;
+  font-size: $size;
+  line-height: calc($size * 1.5);
+  margin-bottom: 1rem;
+  border: red solid 2px;
+  @media (min-width: $gDesktop) {
+    font-size: $desktopSize;
+    line-height: calc($desktopSize * 1.5);
+  }
+}
+
+p {
+  @mixin paragraph 1.4rem, 1.6rem;
+}
+
+.o-paragraph {
+  &--last {
+    margin: 0;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
   }
 }
