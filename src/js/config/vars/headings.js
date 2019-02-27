@@ -25,8 +25,8 @@ const typeSettings = {
 };
 
 // Edit these two lines below to change typeScale and Mulitplier
-const { augmentedFourth: scaleMultiplier } = typeSettings.scaleMultiplier; // Choose Multiplier
-const { augmentedFourth: typeScale } = typeSettings.typeScale; // Choose Scale
+const { perfectFourth: scaleMultiplier } = typeSettings.scaleMultiplier; // Choose Multiplier
+const { perfectFourth: typeScale } = typeSettings.typeScale; // Choose Scale
 
 const valueUp = values => {
   return values.map(value => {
